@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+/*To be visible --delete later*/
+.content {
+    /*height: auto;*/
+    width: auto;
+    /*text-align: center;*/
+    border: solid 2px #DDD;
+    box-sizing: border-box;
+}
+    /*Remember that the height and width properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!*/
+
+/*titles*/
+.site h1 a {color: #000;
+    text-decoration: none;
+}
+
+.site h1 {
+    margin:0;
+    font-size: 30px;
+}
+
+/*navigation*/
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    width: auto;
+}
+
+.menu li a {
+    display: block;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+    /*In default, ”li”elements are BLOCK-level and "a"elements are defined as INLINE-level elements which only takes up as much width as necessary*/
+
+.menu li a:hover {
+    background-color: #EEE;
+}
+
+.menu ul:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*articles*/
+.article h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.article p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/*sidemenu*/
+
+.sidemenu h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: dotted 2px #DDD;
+    font-size: 18px;
+}
+
+.sidemenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidemenu li a {
+    display: block;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidemenu li a:hover {
+    background-color: #EEE;
+}
+
+/*corrapsing options*/
+@media (min-width: 768px){
+    
+
+    .boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .box3 {
+        float:left;
+        width: 70%;
+    }
+    
+    .box4 {
+        float:left;
+        width: 30%;
+    }
+}
